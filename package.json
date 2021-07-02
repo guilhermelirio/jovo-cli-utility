@@ -1,0 +1,86 @@
+{
+	"name": "jovo-utility",
+	"displayName": "Jovo CLI Utility",
+	"description": "A simple extension to make it easier to use the commands of Jovo CLI, an open source framework for developing voice experiences.",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.57.0"
+	},
+	"publisher": "IaraDigital",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:jovo-utility.install",
+		"onCommand:jovo-utility.version",
+		"onCommand:jovo-utility.new-project",
+		"onCommand:jovo-utility.build-alexa",
+		"onCommand:jovo-utility.build-google",
+		"onCommand:jovo-utility.deploy-alexa",
+		"onCommand:jovo-utility.deploy-google",
+		"onCommand:jovo-utility.deploy-target-zip",
+		"onCommand:jovo-utility.run",
+		"onCommand:jovo-utility.ask-configure"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "jovo-utility.install",
+				"title": "Jovo: CLI Install"
+			},
+			{
+				"command": "jovo-utility.version",
+				"title": "Jovo: CLI Version"
+			},
+			{
+				"command": "jovo-utility.new-project",
+				"title": "Jovo: Create New Project"
+			},
+			{
+				"command": "jovo-utility.build-alexa",
+				"title": "Jovo: Build Alexa Skill"
+			},
+			{
+				"command": "jovo-utility.build-google",
+				"title": "Jovo: Build Google Action"
+			},
+			{
+				"command": "jovo-utility.deploy-alexa",
+				"title": "Jovo: Deploy Alexa Skill"
+			},
+			{
+				"command": "jovo-utility.deploy-google",
+				"title": "Jovo: Deploy Google Action"
+			},
+			{
+				"command": "jovo-utility.deploy-target-zip",
+				"title": "Jovo: Deploy Target > Zip"
+			},
+			{
+				"command": "jovo-utility.run",
+				"title": "Jovo: Run Local"
+			},
+			{
+				"command": "jovo-utility.ask-configure",
+				"title": "Jovo: ASK CLI Configure"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "yarn run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.57.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.2.2",
+		"@types/node": "14.x",
+		"eslint": "^7.27.0",
+		"glob": "^7.1.7",
+		"mocha": "^8.4.0",
+		"typescript": "^4.3.2",
+		"vscode-test": "^1.5.2"
+	}
+}
