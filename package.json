@@ -13,8 +13,7 @@
 	"publisher": "IaraDigital",
 	"icon": "img/cli.jpg",
 	"categories": [
-		"Other",
-		"CLI Commands"
+		"Other"
 	],
 	"activationEvents": [
 		"onCommand:jovo-utility.install",
