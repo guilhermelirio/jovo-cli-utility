@@ -13,7 +13,7 @@ A simple extension to make it easier to use the commands of Jovo CLI, an open so
 * Jovo: Deploy Google Action (Deploy a Google Action)
 * Jovo: Deploy Target > Zip (Create a ready-to-deploy bundle.zip file)
 * Jovo: Run Local (Start the development server)
-* Jovo: ASK CLI Configure (Start the development server)
+* Jovo: ASK CLI Configure (Configure your ASK (and AWS) credentials - need a ASK CLI package)
 
 
 <!-- Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.

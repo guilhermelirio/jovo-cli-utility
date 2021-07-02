@@ -6,9 +6,15 @@
 	"engines": {
 		"vscode": "^1.57.0"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/guilhermelirio/jovo-cli-utility"
+	},
 	"publisher": "IaraDigital",
+	"icon": "img/cli.jpg",
 	"categories": [
-		"Other"
+		"Other",
+		"CLI Commands"
 	],
 	"activationEvents": [
 		"onCommand:jovo-utility.install",
