@@ -50,11 +50,11 @@ function activate(context) {
 		);
 		if (preferences === "NPM") {
 
-			await runTerminalCommand(`npm install -g jovo-cli`);
+			await runTerminalCommand(`npm install -g jovo-cli@latest`);
 
 		} else {
 
-			await runTerminalCommand(`yarn global add jovo-cli`);
+			await runTerminalCommand(`yarn global add jovo-cli@latest`);
 		}
 		if (preferences == null) return;
 	});
@@ -65,13 +65,13 @@ function activate(context) {
 
 		vscode.window.showInformationMessage(`Creating project: ${input}`);
 
-		await runTerminalCommand(`jovo new ${input}`);
+		await runTerminalCommand(`jovo3 new ${input}`);
 
 	});
 
 	let version = vscode.commands.registerCommand('jovo-utility.version', async function () {
 
-		await runTerminalCommand('jovo -v');
+		await runTerminalCommand('jovo3 -v');
 
 	});
 
@@ -79,37 +79,37 @@ function activate(context) {
 
 		//vscode.window.showInformationMessage('Executing');
 
-		await runTerminalCommand(`jovo build --platform alexaSkill`);
+		await runTerminalCommand(`jovo3 build --platform alexaSkill`);
 
 	});
 
 	let buildGoogle = vscode.commands.registerCommand('jovo-utility.build-google', async function () {
 
-		await runTerminalCommand('jovo build --platform googleAction');
+		await runTerminalCommand('jovo3 build --platform googleAction');
 
 	});
 
 	let deployAlexa = vscode.commands.registerCommand('jovo-utility.deploy-alexa', async function () {
 
-		await runTerminalCommand('jovo deploy --platform alexaSkill');
+		await runTerminalCommand('jovo3 deploy --platform alexaSkill');
 
 	});
 
 	let deployGoogle = vscode.commands.registerCommand('jovo-utility.deploy-google', async function () {
 
-		await runTerminalCommand('jovo deploy --platform googleAction');
+		await runTerminalCommand('jovo3 deploy --platform googleAction');
 
 	});
 
 	let deployZip = vscode.commands.registerCommand('jovo-utility.deploy-target-zip', async function () {
 
-		await runTerminalCommand('jovo deploy --target zip');
+		await runTerminalCommand('jovo3 deploy --target zip');
 
 	});
 
 	let runLocal = vscode.commands.registerCommand('jovo-utility.run', async function () {
 
-		await runTerminalCommand(`jovo run -w`);
+		await runTerminalCommand(`jovo3 run -w`);
 
 	});
 

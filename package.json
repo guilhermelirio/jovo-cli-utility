@@ -2,7 +2,7 @@
 	"name": "jovo-utility",
 	"displayName": "Jovo CLI Utility",
 	"description": "A simple extension to make it easier to use the commands of Jovo CLI, an open source framework for developing voice experiences.",
-	"version": "0.0.1",
+	"version": "1.0.2",
 	"engines": {
 		"vscode": "^1.57.0"
 	},
@@ -32,43 +32,43 @@
 		"commands": [
 			{
 				"command": "jovo-utility.install",
-				"title": "Jovo: CLI Install"
+				"title": "Jovo v3: CLI Install"
 			},
 			{
 				"command": "jovo-utility.version",
-				"title": "Jovo: CLI Version"
+				"title": "Jovo v3: CLI Version"
 			},
 			{
 				"command": "jovo-utility.new-project",
-				"title": "Jovo: Create New Project"
+				"title": "Jovo v3: Create New Project"
 			},
 			{
 				"command": "jovo-utility.build-alexa",
-				"title": "Jovo: Build Alexa Skill"
+				"title": "Jovo v3: Build Alexa Skill"
 			},
 			{
 				"command": "jovo-utility.build-google",
-				"title": "Jovo: Build Google Action"
+				"title": "Jovo v3: Build Google Action"
 			},
 			{
 				"command": "jovo-utility.deploy-alexa",
-				"title": "Jovo: Deploy Alexa Skill"
+				"title": "Jovo v3: Deploy Alexa Skill"
 			},
 			{
 				"command": "jovo-utility.deploy-google",
-				"title": "Jovo: Deploy Google Action"
+				"title": "Jovo v3: Deploy Google Action"
 			},
 			{
 				"command": "jovo-utility.deploy-target-zip",
-				"title": "Jovo: Deploy Target > Zip"
+				"title": "Jovo v3: Deploy Target > Zip"
 			},
 			{
 				"command": "jovo-utility.run",
-				"title": "Jovo: Run Local"
+				"title": "Jovo v3: Run Local"
 			},
 			{
 				"command": "jovo-utility.ask-configure",
-				"title": "Jovo: ASK CLI Configure"
+				"title": "Jovo v3: ASK CLI Configure"
 			}
 		]
 	},
